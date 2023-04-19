@@ -1,0 +1,332 @@
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 95%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  margin-top: -0.5px;
+  background-color: var(--color-body);
+  background-image: linear-gradient(
+    to right,
+    var(--color-body),
+    var(--color-heading)
+  );
+  overflow-x: hidden;
+}
+
+:root {
+  --color-body: #303841;
+  --color-heading: #7aa5d2;
+  --color-navigation: #47555e;
+  --color-text: #eeeeee;
+}
+
+.navigation-bar {
+  height: 50px;
+  width: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation-bar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.navigation-bar a:hover {
+  background-color: #28231d;
+  color: white;
+  height: 15px;
+  width: auto;
+  border-radius: 10px;
+  /*margin-top: 5px;*/
+  transition: 0.5s;
+}
+
+/* .navigation-bar a.active {
+        background-color: #04aa6d;
+        color: black;
+    } */
+.image-intro {
+  height: 400px;
+  width: 115%;
+  margin-left: -34px;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 125px;
+  right: 430px;
+  color: gray;
+  text-align: center;
+  height: 150px;
+  width: 550px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.newsletter {
+  height: 60px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 430px;
+  width: 300px;
+  background-color: var(--color-navigation);
+  color: white;
+  margin-top: 30px;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.8s;
+}
+
+.card:hover {
+  box-shadow: var(--color-heading) -7px 7px;
+  transform: translate3d(0px, -1px, 0px);
+  transition: 0.8s;
+}
+.read_more-btn {
+  margin-left: 100px;
+  margin-top: -100px;
+}
+
+.gallery {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery-image {
+  height: 615px;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.image-1 {
+  height: 200px;
+  width: 300px;
+}
+
+.image-2 {
+  height: 200px;
+  width: 300px;
+}
+
+.image-2-2 {
+  height: 406px;
+  width: 300px;
+  margin-top: 5px;
+}
+
+.image-3 {
+  height: 200px;
+  width: 300px;
+}
+
+.image-4-4 {
+  height: 406px;
+  width: 300px;
+}
+
+.image-4 {
+  height: 200px;
+  width: 300px;
+  margin-top: 5px;
+}
+
+.image-4 img:hover {
+  height: 220px;
+  width: 320px;
+}
+
+.reviews-container {
+  height: 620px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-1,
+.review-2,
+.review-3 {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.review-image-1 {
+  height: 180px;
+  width: 180px;
+  margin-top: 10px;
+  margin-left: 110px;
+  border-radius: 90px;
+}
+
+.review-text-1 {
+  height: 180px;
+  width: 65%;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.review-text-2 {
+  height: 180px;
+  width: 65%;
+  border-radius: 5px;
+  margin-left: 110px;
+  margin-top: 10px;
+}
+
+.review-image-2 {
+  height: 180px;
+  width: 180px;
+  margin-top: 10px;
+  margin-left: 50px;
+  border-radius: 90px;
+}
+
+.review-image-3 {
+  height: 180px;
+  width: 180px;
+  margin-top: 10px;
+  margin-left: 110px;
+  border-radius: 90px;
+}
+
+.review-text-3 {
+  height: 180px;
+  width: 65%;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.booking-container {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.booking-sub-container {
+  height: 600px;
+  width: 80%;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.room-type,
+.date-time,
+.departure-date,
+.guests {
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  background-color: var(--color-text);
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+input::placeholder {
+  font-weight: bold;
+}
+
+.contact-container {
+  height: 600px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-logo {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo {
+  height: 150px;
+  width: 150px;
+}
+
+.contact-parent {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact-child {
+  height: 600px;
+  width: 45%;
+}
+
+.child-1 {
+  height: 350px;
+  width: 100%;
+}
+
+.child-2 {
+  height: 200px;
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
